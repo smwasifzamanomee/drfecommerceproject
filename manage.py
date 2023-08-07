@@ -2,8 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-from defecommerce.settings import base 
-
+from defecommerce.settings import base
 
 def main():
     """Run administrative tasks."""

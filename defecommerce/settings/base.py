@@ -1,7 +1,7 @@
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -21,8 +21,16 @@ INSTALLED_APPS = [
     # External packages
     'rest_framework',
     # Internal apps
+    'product'
     
 ]
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
